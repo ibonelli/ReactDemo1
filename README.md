@@ -29,8 +29,13 @@ Currently, two official plugins are available:
 (0:51:55) Chapter 6: useState Hook
 	Explains [useState](https://react.dev/reference/react/useState)
 	See file src/Content.jsx changes for code explained within this Chapter.
-
 (1:03:23) Chapter 7: Lists & Keys
+	Explains how to create lists and continue use click & events.
+	Uses:
+		- https://react-icons.github.io/react-icons/icons?name=rx
+		- [onChange Form Events (from SyntheticEvent)](https://legacy.reactjs.org/docs/events.html#form-events)
+		- [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+	See file src/Content.jsx changes for code explained within this Chapter.
 (1:35:50) Chapter 8: Props & Prop Drilling
 (2:01:19) Chapter 9: Controlled Component Inputs
 (2:38:25) Chapter 10: Project Challenge
