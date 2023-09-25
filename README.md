@@ -27,7 +27,8 @@ Currently, two official plugins are available:
 		- [API Components: MouseEvent handler function - onClick](https://react.dev/reference/react-dom/components/common#mouseevent-handler)
 	See file src/Content.jsx for the code explained within this Chapter.
 (0:51:55) Chapter 6: useState Hook
-	...
+	Explains [useState](https://react.dev/reference/react/useState)
+	See file src/Content.jsx changes for code explained within this Chapter.
 
 (1:03:23) Chapter 7: Lists & Keys
 (1:35:50) Chapter 8: Props & Prop Drilling

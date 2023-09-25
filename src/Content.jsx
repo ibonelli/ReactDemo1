@@ -1,37 +1,47 @@
+import { useState } from 'react';
+import { RxTrash } from "react-icons/rx";
+
 const Content = () => {
-    const handleNameChange = () => {
-        const names = ['Bob', 'Kevin', 'Dave'];
-        const int = Math.floor(Math.random() * 3);
-        return names[int];
-    }
+    const [items, setItems] = useState([
+        {
+            id: 1,
+            checked: true,
+            item: "One half pound bag of Cocoa Covered Almonds Unsalted"
+        },
+        {
+            id: 2,
+            checked: false,
+            item: "Item 2"
+        },
+        {
+            id: 3,
+            checked: false,
+            item: "Item 3"
+        }
+    ]);
 
-    const handleClick = () => {
-        console.log("You clicked it.");
-    }
-
-    const handleClick2 = (name) => {
-        // Using ES6 string interpolation/template literals with ` (backticks) and ${expr} (interpolated expression)
-        console.log(`${name} clicked it.`);
-    }
-
-    const handleClick3 = (e) => {
-        // We pass the event in this case
-        // console.log(e); // This shows the object and I can see what we drilled down bellow
-        console.log(e.target.innerText);
+    const handleCheck = (id) => {
+        console.log(`key: ${id}`);
     }
 
     return (
         <main>
-            <p onDoubleClick={handleClick}>
-                Hello {handleNameChange()}!
-            </p>
-            {/* In here we need use only a reference to the function, because otherwise it would be called immediately */}
-            <button onClick={handleClick}>Click it</button>
-            {/* In here we need an annonymous function to be able to pass a parameter, so it is not called until it gets the click
-              * What happens here is that the annonymous function is also a reference, hence it is not called immediately.
-              */}
-            <button onClick={() => handleClick2('Igna')}>Click it</button>
-            <button onClick={(e) => handleClick3(e)}>Click it</button>
+                <ul>
+                    {items.map((item) => (
+                        <li className="item" key={item.id}>
+                            <input
+                                type="checkbox"
+                                onChange={() => handleCheck(item.id)}
+                                checked={item.checked}
+                            />
+                            <label>{item.item}</label>
+                            <RxTrash
+                                role="button"
+                                tabIndex="0"
+                            />
+                        </li>
+                    ))}
+                </ul>
         </main>
     )
 }
