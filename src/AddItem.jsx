@@ -1,12 +1,6 @@
 import { RxPlus } from "react-icons/rx";
 import { useRef } from 'react';
 
-/*
-    ref={inputRef}
-    
-    onClick={() => inputRef.current.focus()}
-*/
-
 const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
     const inputRef = useRef();
 
@@ -15,6 +9,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
         <label htmlFor='addItem'>Add Item</label>
             <input
                 autoFocus
+                ref={inputRef}
                 id='addItem'
                 type='text'
                 placeholder='Add Item'
@@ -25,7 +20,8 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
             <button
                 type='submit'
                 aria-label='Add Item'
-            >
+                onClick={() => inputRef.current.focus()}
+                >
                 <RxPlus />
             </button>
         </form>
