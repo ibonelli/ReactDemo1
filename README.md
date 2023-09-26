@@ -37,7 +37,9 @@ Currently, two official plugins are available:
 		- [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 	See file src/Content.jsx changes for code explained within this Chapter.
 (1:35:50) Chapter 8: Props & Prop Drilling
+	Lots of changes to pass on props and component redesign.
 (2:01:19) Chapter 9: Controlled Component Inputs
+	How to handle forms within React.
 (2:38:25) Chapter 10: Project Challenge
 (3:03:44) Chapter 11: useEffect Hook
 (3:15:08) Chapter 12: JSON Server
