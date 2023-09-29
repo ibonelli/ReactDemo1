@@ -39,14 +39,18 @@ Currently, two official plugins are available:
 (1:35:50) Chapter 8: Props & Prop Drilling
 	Lots of changes to pass on props and component redesign.
 (2:01:19) Chapter 9: Controlled Component Inputs
-	How to handle forms within React.
+	How to handle forms within React. Also [Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs) & [Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs).
+	Additional video from Dave [BUILD a React Timer with useRef](https://www.youtube.com/watch?v=s6UAuFzL308) & it's [github repo](https://github.com/gitdagray/useref_tut).
 (2:38:25) Chapter 10: Project Challenge
 (3:03:44) Chapter 11: useEffect Hook
+	How to use useEffect Hook in React: [useEffect](https://react.dev/reference/react/useEffect).
+	With the useEffect Hook we can trigger a behavior when an state/variable changes.
 (3:15:08) Chapter 12: JSON Server
 (3:21:23) Chapter 13: Fetch API Data
 (3:44:37) Chapter 14: CRUD Operations
 (4:04:33) Chapter 15: Fetch Data Challenge
 (4:43:10) Chapter 16: React Router
+	* <---- CONTINUE HERE
 (5:02:58) Chapter 17: Router Hooks & Links
 (5:51:28) Chapter 18: Flexbox Components
 (6:02:34) Chapter 19: Axios API Requests
